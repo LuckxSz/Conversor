@@ -2,7 +2,7 @@
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const valueShow = document.getElementById("show-value");
-const image = document.getElementById("image");
+
 
 // currency  values
 const US = 16;
