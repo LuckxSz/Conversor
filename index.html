@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-div">
+        <span>R$ </span>
+        <input type="number" id="input" placeholder="Ex: 47.25" />
+      </div>
+      <div class="select-div">
+        <span>to </span>
+        <select id="select">
+          <option value="US">US $</option>
+          <option value="JP">JP ¥</option>
+          <option value="LI">LI £</option>
+        </select>
+      </div>
+      <div class="button-div">
+        <button id="btn" onclick="convert()">Convert</button>
+      </div>
+      <div class="p-div">
+        <p id="currency-info"></p>
+        <p id="show-value"></p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
