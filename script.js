@@ -2,11 +2,11 @@
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const valueShow = document.getElementById("show-value");
-
+const image = document.getElementById("image");
 
 // currency  values
 const US = 16;
-const JP = 0.034;
+const JP = 20;
 const LI = 30;
 
 const convert = () => {
@@ -28,10 +28,10 @@ const convert = () => {
       currency: "USD",
     }).format(US * parseInt(inputValue));
   } else if (selectedValue === "JP") {
-    valueShow.innerHTML = new Intl.NumberFormat("ja-JP", {
+    valueShow.innerHTML = new Intl.NumberFormat("jp-JP", {
       style: "currency",
       currency: "JPY",
-    }).format(JP / parseInt(inputValue));
+    }).format(JP * parseInt(inputValue));
   } else {
     valueShow.innerHTML = new Intl.NumberFormat("en-GB", {
       style: "currency",
